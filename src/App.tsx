@@ -1,6 +1,7 @@
 
 import { useAuthenticator } from '@aws-amplify/ui-react';
 
+
 function App() {
    const { signOut } = useAuthenticator();
 
