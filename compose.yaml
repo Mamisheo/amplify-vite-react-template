@@ -1,0 +1,10 @@
+services:
+  awsamplifybackendstorage:
+    image: awsamplifybackendstorage
+    build:
+      context: node_modules/@aws-amplify/backend-storage
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
